@@ -1,4 +1,4 @@
-/*
+package org.example;/*
 Implementar un método que calcule el factorial de un número entero cualquiera, siendo este un
 parámetro del método. Utilizar únicamente bucles for.
 Si N=3 entonces factorial(N) = 3.2.1 = 6
