@@ -15,18 +15,20 @@ lo mismo para los impares
  */
 public class IsPrime {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int cero = 0;
-        // cuando no es primo
+        Scanner scanner = new Scanner(System.in); // pedir el numero
+        int n = scanner.nextInt(); // almacenarlo
+        int cero = 0; // variable para comenzar a hacer la suma
+
+        // evaluar cuando no es primo
         while (n % n != 1) {
             System.out.println(n + " no es primo");
 
             // logica de la suma de los numeros pares
-            while (cero < n) {
+            while (cero < n && cero % 2 == 0) {
                 cero++;
                 System.out.println(cero + " cero");
             }
+            break;
         }
     }
 }
