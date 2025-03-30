@@ -1,0 +1,44 @@
+toLowerCase()
+   convierte todo a minúsculas
+   System.out.println("HOLA".toLowerCase()); // "hola"
+
+toUpperCase()
+   convierte todo a mayúsculas
+   System.out.println("hola".toUpperCase()); // "HOLA"
+
+indexOf(String str)
+   dice dónde aparece la subcadena por primera vez
+   System.out.println("hola".indexOf("la")); // 2
+
+indexOf(String str, int fromIndex)
+   busca la subcadena desde un índice que elijas
+   System.out.println("hola".indexOf("o", 1)); // 1
+
+lastIndexOf(String str)
+   dice la última vez que aparece una subcadena
+   System.out.println("hola".lastIndexOf("o")); // 1
+
+lastIndexOf(String str, int fromIndex)
+   busca hacia atrás desde un índice específico
+   System.out.println("hola".lastIndexOf("o", 2)); // 1
+
+contains(CharSequence sequence)
+   revisa si la cadena tiene la secuencia que le pases
+   System.out.println("hola".contains("la")); // true
+
+replace(char oldChar, char newChar)
+   cambia todas las apariciones de un carácter por otro
+   System.out.println("hola".replace('o', '0')); // "h0la"
+
+replace(CharSequence target, CharSequence replacement)
+   reemplaza todas las apariciones de una subcadena por otra
+   System.out.println("hola".replace("la", "le")); // "hole"
+
+replaceAll(String regex, String replacement)
+   reemplaza todas las coincidencias de un patrón por otra cadena
+   String text = "hola, hola!";
+   System.out.println(text.replaceAll("hola", "adiós")); // "adiós, adiós!"
+
+replaceFirst(String regex, String replacement)
+   reemplaza la primera coincidencia de un patrón por otra cadena
+   System.out.println(text.replaceFirst("hola", "adiós")); // "adiós, hola!"

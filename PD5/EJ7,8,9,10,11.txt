@@ -1,0 +1,133 @@
+EJERCICIO 7
+
+¿qué es la clase StringBuilder? ¿para qué sirve?
+Escribe en un papel – archivo txt - qué es lo que hacen los siguientes métodos de StringBuilder,
+y, simultáneamente, escribe código bien sencillo que use cada método y muestre en consola el
+resultado de ejecutarlo:
+● Todos los constructores
+● setLength
+● ensureCapacity
+● append
+● insert
+● delete
+● deleteCharAt
+● reverse
+
+
+Clase StringBuilder
+es una herramienta para trabajar con cadenas de texto. la diferencia con la clase String es que no se puede cambiar una vez que se crea, StringBuilder deja modificar el contenido sin crear nuevos objetos, lo que es mucho más rápido cuando hay que hacer muchos cambios.
+
+
+StringBuilder(): crea un StringBuilder vacío.
+  StringBuilder sb1 = new StringBuilder()
+  System.out.println(sb1.toString()) // ""
+
+StringBuilder(String str): crea un StringBuilder con el texto que le pases
+  StringBuilder sb2 = new StringBuilder("Hola")
+  System.out.println(sb2.toString()) // "Hola"
+
+StringBuilder(int capacity): crea un StringBuilder con una capacidad inicial determinada
+  StringBuilder sb3 = new StringBuilder(50)
+  System.out.println(sb3.capacity()) // 50
+
+setLength(int newLength)
+es un metodo que cambia la longitud del StringBuilder. si se le pasa un valor más corto, se recorta, si es más largo, se llena con espacios vacíos
+StringBuilder sb4 = new StringBuilder("Hola")
+sb4.setLength(2)
+System.out.println(sb4.toString()) // "Ho"
+
+ensureCapacity(int minimumCapacity)
+se asegura que el StringBuilder tenga al menos una capacidad minima
+StringBuilder sb5 = new StringBuilder()
+sb5.ensureCapacity(100)
+System.out.println(sb5.capacity()) // al menos 100
+
+append(String str)
+agrega una cadena al final del contenido del StringBuilder
+StringBuilder sb6 = new StringBuilder("Hola")
+sb6.append(" Mundo")
+System.out.println(sb6.toString()) // "Hola Mundo"
+
+insert(int offset, String str)
+inserta una cadena en una posición determinada
+StringBuilder sb7 = new StringBuilder("Hola")
+sb7.insert(2, "XX")
+System.out.println(sb7.toString()) // "HoXXla"
+
+delete(int start, int end)
+Elimina caracteres desde una posición inicial hasta la final (sin incluir la final)
+StringBuilder sb8 = new StringBuilder("Hola Mundo")
+sb8.delete(4, 10)
+System.out.println(sb8.toString()) // "Hola "
+
+deleteCharAt(int index)
+quita el carácter que está en la posición seleccionada
+StringBuilder sb9 = new StringBuilder("Hola")
+sb9.deleteCharAt(1)
+System.out.println(sb9.toString()) // "Ha"
+
+reverse()
+Iinvierte todo el contenido del StringBuilder
+StringBuilder sb10 = new StringBuilder("Hola")
+sb10.reverse()
+System.out.println(sb10.toString()) // "aloH"
+
+EJERCICIO 8:
+¿Cuál es la capacidad inicial del siguiente stringbuilder?
+StringBuilder sb = new StringBuilder("Able was I ere I saw Elba. ");
+en este caso es de 46, porque la cadena tiene 30 en total, pero se le agregan 16 con el metodo para poder redimensionar si es necesario, esto es automático.
+
+
+EJERCICIO 9
+Considere la siguiente string:
+String hannah = "Did Hannah see bees? Hannah did.";
+¿qué valor muestra la expresión “hannah.length”?
+si hacemos un System.out.println(hannah.length()); deberia devolver 37
+
+¿qué valor es retornado por la invocación del método “hannah.charAt(12)”?
+si hacemos un System.out.println(hannah.charAt(12)); esto devuelve la 's'
+
+Escribe una expresión que referencie la letra “b” en la string referida por “hannah".
+idem
+System.out.println(hannah.charAt(14)); deberia devolver 'b' en este caso
+
+EJERCICIO 10
+
+¿Cuán larga es las string devuelta por la siguiente expresión? ¿cuál es la string?
+"Was it a car or a cat I saw?".substring(9, 12)
+el substring devuelve desde el 9 al 12 sin incluir el 12.
+devuelve "car", siendo c=9, a=10, r=11
+
+EJERCICIO 11
+En el siguiente programa, ¿cuál es el valor de “result” después de la ejecución de cada una de las líneas numeradas?
+
+public class ComputeResult {
+    public static void main(String[] args) {
+        String original = "este es el curso de Programación 2";
+        StringBuilder result = new StringBuilder("hola");
+        int index = original.indexOf('a');
+
+        /*1*/ result.setCharAt(0, original.charAt(0));
+        cambia 'h' por 'e'
+        ahora result es "eola"
+
+        /*2*/ result.setCharAt(1, original.charAt(original.length() - 1));
+        cambia 'o' por '2'
+        ahora result es "e2la"
+
+        /*3*/ result.insert(1, original.charAt(4));
+        mete 'e' en la posición 1
+        ahora result es "ee2la"
+
+        /*4*/ result.append(original.substring(1, 4));
+        agrega "ste" al final
+        ahora result es "ee2last"
+
+        /*5*/ result.insert(3, (original.substring(index, index + 2) + " "));
+        mete "am " en la posición 3
+        ahora result es "eeam 2last"
+
+        System.out.println(result); imprime el resultado final
+    }
+}
+
