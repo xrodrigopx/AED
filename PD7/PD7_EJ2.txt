@@ -1,0 +1,44 @@
+Observa los siguientes fragmentos de código:
+String s1 = "Hola";
+String s2 = "Hola";
+if (s1 == s2) {
+    System.out.println("True");
+} else {
+    System.out.println("False");
+}
+
+String s1 = new String("Hola");
+String s2 = "Hola";
+if (s1 == s2) {
+    System.out.println("True");
+} else {
+    System.out.println("False");
+}
+
+● ¿Qué sentencia se ejecuta como resultado del If en cada caso y por qué? Busca en internet
+referencias que te permitan explicar las respuestas a las preguntas anteriores. Asegúrate que
+las mismas sean autoritativas y cítalas adecuadamente en tu respuesta.
+
+En el caso 1 se ejecuta System.out.println("True") porque la cadena de texto "Hola" ya existe en memoria, entonces ambas variables apuntan al mismo sector de memoria
+https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+
+En el caso 2 se ejecuta System.out.println("False") por el mismo principio, la variable s1 refiere a un objeto y la variable s2 refiere a la cadena de texto como tal, son dos cosas distintas.
+
+● Propone una versión correcta del código del Ejercicio #1.
+Ayuda: investiga cómo funciona el método intern() de la clase String.
+el metodo intern() sirve para buscar cadenas de texto ya existentes en memoria. esto ayuda para evitar duplicados. si le pasamos una cadena "Hola" por ejemplo y ya existe, devuelve true.
+
+public class Ejercicio1 {
+    public static void main(String[] args) {
+        String s1 = "Hola".intern(); // se asegura de que se use la cadena de la pool
+        String s2 = "Hola".intern(); // también se usa la cadena de la pool
+
+        if (s1 == s2) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+    }
+}
+
+
