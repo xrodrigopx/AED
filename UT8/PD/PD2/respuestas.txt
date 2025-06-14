@@ -1,0 +1,18 @@
+Lista de aristas: Se utiliza una lista para almacenar todas las aristas del grafo, que luego se ordena por peso para procesarlas en orden creciente.
+Estructura de conjuntos disjuntos (Union-Find): Se emplea un mapa (HashMap) para representar los conjuntos de vértices y permitir la detección eficiente de ciclos mediante las operaciones de find y union.
+Lista para el MST: Se utiliza una lista para almacenar las aristas seleccionadas que formarán el Árbol de Expansión Mínima (AAM).
+Análisis del orden del tiempo de ejecución:
+
+El paso más costoso es la ordenación de las aristas, que tiene un costo de O(E log E), donde E es el número de aristas.
+Las operaciones de Union-Find (con compresión de caminos y unión por rango) tienen un costo casi constante, O(α(V)), donde α es la función inversa de Ackermann y V es el número de vértices.
+El tiempo total del algoritmo es O(E log E), ya que E ≥ V en grafos conexos y la ordenación domina el costo.
+
+
+¿Existen alternativas de implementación mejores?
+
+Para grafos densos, el algoritmo de Prim puede ser más eficiente, especialmente si se utiliza una cola de prioridad eficiente (como un heap binario o Fibonacci heap).
+Existen variantes del algoritmo de Kruskal que utilizan estructuras de datos más avanzadas para optimizar aún más las operaciones de Union-Find, pero la mejora es marginal para la mayoría de los casos prácticos.
+Importancia del consumo de memoria:
+
+El consumo de memoria es moderado, ya que se requiere almacenar todas las aristas, los conjuntos disjuntos y el MST resultante.
+En grafos muy grandes, el almacenamiento de todas las aristas puede ser significativo, pero en la mayoría de los casos el consumo es aceptable y no representa un problema crítico frente al beneficio de la eficiencia en tiempo.
