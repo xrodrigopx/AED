@@ -1,0 +1,40 @@
+1. Este problema se representa como un grafo no dirigido, donde los vértices son los Centros de Comunicaciones (CC1 a CC6) y las aristas representan los costos de conexión entre ellos. Los algoritmos necesarios son Kruskal o Prim para encontrar el árbol de expansión mínima que minimice el costo total de los enlaces de fibra óptica.
+
+2. Escribo en seudocódigo los algoritmos mencionados:
+
+   - Algoritmo de Kruskal:
+     1. Ordenar todas las aristas por costo ascendente
+     2. Inicializar un conjunto de vértices disjuntos
+     3. Para cada arista (u, v) en orden:
+        Si u y v no están en el mismo conjunto:
+           Agregar arista (u, v) al árbol
+           Unir los conjuntos de u y v
+     4. Retornar el árbol resultante
+
+   - Algoritmo de Prim:
+     1. Seleccionar un vértice inicial (e.g., CC1)
+     2. Inicializar un conjunto de vértices visitados con el inicial
+     3. Mientras haya vértices no visitados:
+        Encontrar la arista de menor costo que conecte un vértice visitado con uno no visitado
+        Agregar el vértice no visitado al conjunto visitado
+        Agregar la arista al árbol
+     4. Retornar el árbol resultante
+
+3. Aplico el algoritmo de Kruskal con los datos del ejemplo:
+   - Ordenar aristas por costo: (CC1-CC2:5), (CC1-CC3:7), (CC2-CC3:3), (CC2-CC4:7), (CC2-CC5:8), (CC3-CC4:4), (CC3-CC5:5), (CC4-CC5:9), (CC4-CC6:6), (CC5-CC6:3), (CC1-CC6:4), (CC1-CC5:9), (CC2-CC6:7), (CC3-CC6:7).
+   - Seleccionar aristas mientras no forme ciclos:
+     - CC2-CC3: 3
+     - CC5-CC6: 3
+     - CC3-CC4: 4
+     - CC1-CC6: 4
+     - CC1-CC2: 5
+   - Costo total = 3 + 3 + 4 + 4 + 5 = 19 unidades.
+
+Para el ejercicio 2, un algoritmo que determine si dos vértices están conectados en un grafo no dirigido puede ser una búsqueda en profundidad (DFS) o búsqueda en amplitud (BFS). En seudocódigo:
+
+   - DFS:
+     1. Marcar v como visitado
+     2. Para cada vértice w adyacente a v:
+        Si w no está visitado:
+           Llamar DFS(w)
+     3. Retornar si w está marcado como visitado
