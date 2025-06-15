@@ -1,0 +1,53 @@
+1. Descripción de la solución en lenguaje natural:
+
+El problema planteado es un caso clásico del problema del árbol de expansión mínima (Minimum Spanning Tree - MST). En este caso específico, necesitamos conectar todas las casas a la subestación eléctrica de manera que el costo total (longitud del cable) sea mínimo.
+
+Modelo:
+- Cada casa y la subestación se representan como vértices en un grafo
+- Las distancias entre cada par de puntos (casas y subestación) se representan como aristas con pesos
+- El objetivo es encontrar el conjunto de conexiones que:
+  * Conecte todos los puntos
+  * No forme ciclos
+  * Minimice la suma total de las distancias
+
+2. Estructuras de datos necesarias:
+
+TDA Grafo:
+- Matriz de adyacencia o lista de adyacencia para representar las conexiones y distancias
+- Estructura para almacenar las coordenadas de cada punto (casas y subestación)
+
+Estructuras auxiliares:
+- Conjunto disjunto (Union-Find) para verificar ciclos
+- Cola de prioridad para el algoritmo de Kruskal
+- Lista para almacenar las aristas del MST resultante
+
+3. Pseudocódigo de alto nivel:
+
+```
+Algoritmo Kruskal:
+1. Inicializar conjunto disjunto con todos los vértices
+2. Ordenar todas las aristas por peso (distancia)
+3. Para cada arista en orden:
+   - Si los vértices no están en el mismo conjunto:
+     * Agregar arista al MST
+     * Unir los conjuntos de los vértices
+4. Retornar el MST resultante
+
+Estructuras:
+- Grafo: matriz[][n] o lista_adyacencia[n]
+- Punto: {x: float, y: float}
+- Arista: {origen: int, destino: int, peso: float}
+- ConjuntoDisjunto: array[n]
+```
+
+4. Análisis de complejidad temporal:
+
+- Construcción del grafo: O(V²) donde V es el número de vértices (casas + subestación)
+- Ordenamiento de aristas: O(E log E) donde E es el número de aristas
+- Operaciones Union-Find: O(E α(V)) donde α es la función de Ackermann
+- Complejidad total: O(E log E)
+
+En el peor caso, donde E = V² (grafo completo):
+- Complejidad total: O(V² log V²) = O(V² log V)
+
+Este algoritmo es eficiente para grafos dispersos, que es el caso típico en este problema donde no todas las casas están conectadas entre sí directamente. 
