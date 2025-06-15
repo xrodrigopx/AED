@@ -84,7 +84,6 @@ public class TGrafoNoDirigido extends TGrafo implements IGrafoNoDirigido {
         throw new UnsupportedOperationException("Unimplemented method 'eliminarArista'");
     }
 
-    @Override
     public Collection<TVertice> bpf() {
         desvisitarVertices();
         LinkedList<TVertice> visitados = new LinkedList<>();

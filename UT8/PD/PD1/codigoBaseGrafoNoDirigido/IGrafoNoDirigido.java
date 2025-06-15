@@ -1,5 +1,6 @@
 
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.Map;
 
 public interface IGrafoNoDirigido {
@@ -12,7 +13,7 @@ public interface IGrafoNoDirigido {
 
     public TGrafoNoDirigido Kruskal();
 	
-	public LinkedList<TVertice> puntosArticulacion(Comparable etOrigen);
+	public LinkedList puntosArticulacion(Comparable etOrigen);
     
 	boolean esConexo();
 }
