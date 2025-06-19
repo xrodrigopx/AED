@@ -1,0 +1,94 @@
+UNIDAD TEMÁTICA 7 – GRAFOS DIRIGIDOS– Trabajo de Aplicación 2
+
+Dinámica del trabajo grupal en clase.
+Los Equipos resolverán los  ejercicios planteados en el lapso estipulado. Al finalizar cada ejercicio, se responderán
+preguntas proyectadas. Una vez elegidas las respuestas, los equipos tendrán la oportunidad de justificar sus elecciones.
+
+1.  Los equipos resolverán el problema planteado en el ejercicio.
+2.  Se proyectarán en pantalla preguntas breves a responder utilizando el producto del trabajo previo ( corrida
+
+manual o programa desarrollado), aplicado sobre el conjunto de datos especificado.
+
+3.  Los equipos tendrán 5 minutos para analizar sus  respuestas a cada pregunta.
+4.  Se proyectarán en pantalla múltiples opciones de respuesta
+5.  Los equipos simultáneamente indicarán la respuesta elegida (mediante tarjetas).
+6.  Los equipos tendrán 5 minutos para defender sus elecciones ante sus pares.
+7.  Se proyectará en pantalla la respuesta correcta o más apropiada.
+
+Ejemplos de preguntas: “indique el camino más corto para llegar de un cierto vértice origen a un vértice destino, y el
+costo asociado”
+
+ESCENARIO
+La aerolínea sudamericana  “VUELE SEGURO” cuenta con varias líneas que conectan diversas ciudades. La Tabla 1
+
+muestra las conexiones actualmente  existentes.
+
+ Origen / destino  Montevideo
+Montevideo
+Porto Alegre
+San Pablo
+Punta del Este
+
+x
+300
+400
+-
+
+Porto Alegre
+-
+x
+200
+-
+Tabla 1
+
+San Pablo
+-
+-
+x
+410
+
+Punta del
+Este
+150-
+390
+-
+x
+
+Diversas agencias de viajes, que emiten boletos de esta compañía, desean tener en todo momento información sobre
+los itinerarios más económicos entre cualquier par de ciudades.
+
+Por otro lado, la aerolínea desearía saber cuál sería la ciudad más conveniente para instalar los servicios de
+mantenimiento de sus aviones.
+
+El Analista de Sistemas de la Empresa ha identificado el TDA Grafo Dirigido como muy apropiado para la representación
+del problema y la resolución de diferentes requerimientos de información típicos en estas situaciones.
+
+Ejercicio 1
+
+1.  Lee cuidadosamente el planteo del Escenario, dibuja el Grafo correspondiente para los vuelos de la aerolínea y
+
+responde las preguntas proyectadas en pantalla (5 minutos).
+
+2.  Analiza detalladamente el orden del tiempo de ejecución  del algoritmo de Floyd presentado en el material de la
+Cátedra (10 minutos) ¿Será posible reducirlo? ¿cuánto impacta el orden de este algoritmo en las operaciones
+reales, dado por ejemplo el contexto indicado en el Escenario?
+
+Ejercicio 2
+
+1.  Utilizando el algoritmo de Floyd indicado para el TDA Grafo Dirigido, calcula las distancias mínimas resultantes
+
+de vuelos directos o combinaciones, entre todas las ciudades. Prevé la recuperación de los caminos
+correspondientes.  (20 minutos)
+
+2.  ¿En qué ciudad sería más conveniente instalar un centro de mantenimiento? (5 minutos)
+
+Ejercicio 3
+
+1.  En base a la resolución del Ejercicio 2, desarrolla el algoritmo para recuperación de caminos mínimos. (10
+
+minutos)
+
+Ejercicio 4
+Preguntas varias sobre grafos presentadas en pantalla (10 minutos)
+
+
