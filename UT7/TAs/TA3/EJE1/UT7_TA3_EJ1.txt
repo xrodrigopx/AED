@@ -1,0 +1,149 @@
+UNIDAD TEMÁTICA 7 – GRAFOS DIRIGIDOS– Trabajo de Aplicación 3
+
+Escenario
+La aerolínea ha expandido sus operaciones y ahora tiene los siguientes vuelos, de acuerdo a la Tabla 1.
+
+ Origen / destino  Asunción
+Asunción
+Buenos Aires
+Curitiba
+Montevideo
+Porto Alegre
+Rio de Janeiro
+San Pablo
+Santos
+
+x
+1600
+-
+-
+-
+-
+1200
+-
+
+Buenos
+Aires
+1600
+x
+-
+200
+-
+-
+-
+-
+
+Curitiba  Montevideo  Porto Alegre
+
+800
+-
+x
+-
+-
+1500
+600
+-
+
+-
+200
+-
+x
+1000
+-
+2000
+-
+
+Tabla 1
+
+700
+1250
+-
+1000
+x
+-
+980
+1200
+
+Rio de
+Janeiro
+-
+-
+1500
+-
+-
+x
+1800
+-
+
+San
+Pablo
+-
+-
+-
+2000
+980
+1800
+x
+220
+
+Santos
+-
+-
+-
+-
+1200
+1900
+220
+x
+
+Ejercicio 1
+Se provee un conjunto de clases e interfaces básicas para implementar un Grafo Dirigido mediante listas
+de adyacencias. Este grafo se ha de instanciar a partir de un conjunto de vértices y un conjunto de
+aristas.
+
+Se desplegará un GitHubClassroom para cada Equipo.
+
+1.  En equipo, se deberá:
+
+•  Analizar las estructuras de datos diseñadas. ¿Cuáles pueden ser las razones para la utilización de
+las diferentes estructuras de la API de colecciones para representar el grafo, el conjunto de
+vértices, las listas de adyacencias? –
+
+•  Dadas estas  estructuras de datos, construir un programa Java que permita
+
+o  crear un grafo para representar las conexiones aéreas de la aerolínea “VUELE SEGURO”,
+o  cargar este grafo utilizando los archivos provistos “aeropuertos.txt” y “conexiones.txt”
+
+NOTA: el archivo “aeropuertos.txt” contiene un nombre de ciudad por línea (vértices), y el archivo
+“conexiones.txt” contiene, en cada línea, nombre de ciudad origen, nombre de ciudad destino y costo
+de la conexión, separados por comas.
+
+•  mostrar por pantalla la matriz de  conexiones.
+
+2.  FLOYD : Agregar una funcionalidad en el TDA GrafoDirigido que permita calcular los caminos
+
+mínimos entre todos los pares de aeropuertos posibles y:
+
+o  contestar interactivamente preguntas del tipo ¿cuál es la menor distancia posible para ir
+
+desde una ciudad x a otra y?
+
+o  contestar interactivamente preguntas del tipo “indique el itinerario de menor costo
+
+para ir de la ciudad x a la ciudad y”
+
+1
+
+o  contestar interactivamente preguntas del tipo “si la aerolínea decide instalar un nuevo
+centro de mantenimiento y logística para sus aviones, ¿cuál sería el aeropuerto más
+apropiado para ello?
+
+Responder las preguntas presentadas en pantalla, utilizando para ello el programa desarrollado.
+
+Entregables:
+Dibujos de las estructuras y comentarios sobre las mismas.  Código fuente desarrollado para satisfacer
+las consultas especificadas. Todo en el repositorio GitHub.
+
+2
+
+
