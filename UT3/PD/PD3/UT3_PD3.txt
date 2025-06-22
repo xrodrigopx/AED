@@ -1,0 +1,35 @@
+UNIDAD TEMÁTICA  3: Listas, Pilas y Colas
+
+PRACTICOS DOMICILIARIOS INDIVIDUALES – código básico JAVA para el TDA LISTA
+
+En los próximos trabajos de aplicación sobre listas, aplicaremos esta estructura de datos y sus operaciones para la
+solución  de  problemas  comunes  cotidianos.  Muchas  son  las  situaciones  que  pueden  representarse  y  resolverse
+fácilmente con listas (lista de  cursos y sus alumnos, listas de  canciones en un media-player, mi lista  de amigos en
+facebook, etc etc.)
+
+Como preparación previa entonces es conveniente implementar en JAVA y probar las operaciones más elementales
+de listas:
+
+Insertar un elemento en una lista (al final, la lista no está ordenada)
+
+•  Crear los elementos y la lista
+•
+•  Buscar un elemento en una lista
+•
+Listar (imprimir) todos los elementos de una lista
+•  Eliminar un elemento de una lista, dada su clave.
+
+Ejercicio
+
+1.  Escribe lenguaje natural, precondiciones y postcondiciones y seudocódigo para cada operación
+2.  Dadas  las  interfaces  siguientes,  implementa  las  clases  correspondientes  y  realiza  un  programa  JAVA  que  te
+
+permita probar los métodos implementados.
+
+3.  Trae  todo  lo  desarrollado  a  la  próxima  clase,  en  la  cual  se  utilizarán  las  mejores  versiones  para  construir  en
+
+Equipo un programa que resuelva un problema concreto.
+
+NOTA: Las interfaces iNodo e iLista se encuentran publicadas en la webasignatura.
+
+
