@@ -1,0 +1,50 @@
+UNIDAD TEMÁTICA  3: Listas, Pilas, Colas, Orden del Tiempo de ejecución
+
+PRACTICOS  DOMICILIARIOS  INDIVIDUALES  –  Implementación  Almacén  con  listas  y
+genéricos
+
+Escenario: mismo escenario del Trabajo de Aplicación #2:
+
+La tienda “Grandeza y Elegancia ANte Todo” (por sus siglas G.E.AN.T), líder en el rubro de supermercados del país,
+necesita gestionar los productos de  su supermercado, y nos ha encargado la construcción de un sistema software
+que permita hacerlo en forma eficiente.
+
+La información que se tiene sobre un producto puede ser muy variable y extensa, pero como mínimo se tendrá:
+
+•  Nombre del producto,
+•  Código de identificación del producto
+•  Precio unitario.
+•  Cantidad existente del mismo en las góndolas y almacenes.
+
+Nuestro sistema deberá implementar inicialmente las siguientes funcionalidades básicas:
+
+Incorporar un nuevo producto al supermercado.
+
+1.
+2.  Agregar stock a un producto existente.
+3.  Simular la venta de un producto (reducir el stock de un producto existente
+4.  Eliminar productos que ya no se venden (por no ser comercializados más).
+5.  Dado un código de producto, indicar las existencias del mismo en el almacén.
+6.  Listar todos los productos registrados,  ordenados por nombre, presentando además su stock.
+
+Ejercicio #1
+
+Compra  de  más  unidades  de  un  cierto  producto  o  Incorporación  de  uno  nuevo.  ¿Cuál  es  el  valor  económico
+agregado  al  stock?  Dado  un  archivo  de  entrada  (“altas.txt”)  actualizar  el  almacén  en  forma  correspondiente  e
+indicar el monto total en que se ha incrementado el valor del stock (dinero gastado en comprar estos productos). El
+archivo “altas.txt” tiene la siguiente estructura (1 producto por línea, campos separados por comas)
+
+CODIGO PRODUCTO, DESCRIPCION DEL PRODUCTO, PRECIO UNITARIO, CANTIDAD
+
+Ejercicio #2
+
+Venta de un producto (buscar y reducir su stock de acuerdo a la venta). ¿Cuál es el valor económico reducido del
+stock? Dado un archivo de entrada (“ventas.txt”) actualizar el almacén en forma correspondiente e indicar el monto
+total  en  que  se  ha  reducido    el  valor  del  stock  (monto  total  vendido).  El  archivo  “ventas.txt”  tiene  la  siguiente
+estructura (1 producto por línea, campos separados por comas)
+
+Nota: si el stock disponible es menor que la venta deseada, se venderá lo que haya.
+
+CODIGO PRODUCTO, CANTIDAD a VENDER.
+
+
