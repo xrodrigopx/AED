@@ -1,0 +1,46 @@
+UNIDAD TEMÁTICA 9
+
+PRACTICOS DOMICILIARIOS INDIVIDUALES - 2
+
+EJERCICIO 1
+
+En el algoritmo de Shellsort la elección de los incrementos es  medular para la eficiencia del método. Existen varias
+combinaciones que se han encontrado apropiadas a lo largo de los años.
+
+1.  Utilizando toda la bibliografía de referencia, más todas las resultantes de tu propia investigación, describe al
+menos 3 combinaciones de incrementos (y que no hayan sido vistas en clase) que hayan sido publicadas por
+autores  reconocidos  del  área  de  Ciencias  de  la  Computación.  Incluye  en  el  documento  las  referencias
+completas  a  estas  publicaciones.  Analiza  de  qué  forma(s)  se  pueden  implementar  y  descríbelas  en  el
+documento.
+
+2.  Desarrolla un análisis detallado del orden del tiempo de ejecución del algoritmo, en la forma ya conocida.
+3.  Utilizando  cada  una  de  las  3  combinaciones  de  incrementos  que  has  seleccionado,  muestra  cómo  se  va
+
+ordenando el siguiente conjunto de datos, con este algoritmo.
+
+256 - 458 - 655 - 298 - 043 - 648 - 778 - 621 - 655 - 019 - 124 - 847
+
+EJERCICIO 2
+
+1.  Utilizando la versión del algoritmo “BURBUJA” que está en la presentación de la Cátedra, muestra cómo se
+ordena el siguiente conjunto de datos, paso a paso. Sugerencia: escribe el conjunto en forma vertical, y las
+iteraciones  en  el  sentido  horizontal.  De  esta  forma  es  más  evidente  cómo  las  claves  “más  liviana”  (las
+menores), cual burbujas, van subiendo en el conjunto….
+
+44 - 55 - 12 - 42 - 94 - 18 - 6 – 67
+
+¿queda ya este conjunto ordenado antes de la última iteración (de este algoritmo)?
+
+2.  El  algoritmo  de  ordenación  “BURBUJA”  tiene  un  orden  del  tiempo  de  ejecución  cuadrático.  Sin  embargo,
+quizás se pueda mejorar un poco, dadas ciertas condiciones. Analiza, investiga y contesta: ¿Puede la versión
+del algoritmo de la  presentación de la Cátedra ser mejorada? Describe al menos dos formas (seudocódigo
+detallado) en que se podría mejorar….
+
+3.  Utilizando al menos dos formas mejoradas del algoritmo, muestra paso a paso cómo se ordena el conjunto
+
+de datos del punto 1.
+
+4.  El  algoritmo  conocido  como  “shakersort”  o  “cocktail”  es  un  derivado  del  “burbuja”.  Describe  cómo
+funciona. Utilizando este algoritmo, muestra paso a paso cómo se va ordenando el conjunto del punto 1.
+
+

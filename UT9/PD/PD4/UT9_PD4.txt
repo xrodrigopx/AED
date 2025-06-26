@@ -1,0 +1,33 @@
+UNIDAD TEMÁTICA 9
+
+PRACTICOS DOMICILIARIOS INDIVIDUALES - 4
+
+EJERCICIO 1
+
+Realiza  una  investigación  en  la  web  acerca  de  incrementos  recomendados  para  el  algoritmo  de  ShellSort.  Utiliza
+libros y publicaciones de investigación modernas (recuerda que para acceder a trabajos de investigación publicados
+tienes disponible el proxy www.timbo.org.uy – debes registrarte - )
+
+Haz  un  resumen  de  tus  hallazgos  más  importantes,  citando  las  referencias  correspondientes.    Prueba  algunos  de
+esos incrementos en el método de Shellsort que has implementado en los ejercicios de clase.
+
+EJERCICIO 2
+
+Realiza  una  investigación en  la  web  acerca  de  funciones  de  pivote  recomendadas  para  el  algoritmo  de  QuickSort.
+Utiliza  libros  y  publicaciones  de  investigación  modernas.  Investiga  también  cómo  implementan  este  algoritmo  las
+librerías de los lenguajes modernos comerciales (java, c#, python, etc.)
+
+Haz un resumen de tus hallazgos más importantes, citando las referencias correspondientes.
+
+Prueba algunas de estas funciones de pivote en el método de QuickSort que has implementado en los ejercicios de
+clase.
+
+EJERCICIO 3
+
+Utilizando  conceptos  de  clasificación,  diseña  un  algoritmo  eficiente  que  permita  determinar  si  dos  conjuntos  (de
+tamaños m y n  respectivamente) son disjuntos.
+
+Analiza  el  orden  del  tiempo  de  ejecución  (peor  caso)  en  términos  de  m  y  n,  considerando  el  caso  en  que  m  es
+sustancialmente menor que n.
+
+
